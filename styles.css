@@ -1,0 +1,672 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* general html styles start */
+html {
+    font-size: 100%;
+}
+.wrapper {
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+}
+/* similar styles between all headings */
+h1, 
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #E75605;
+}
+/* similar styles between all buttons */
+button {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #fff;
+    border: 3px solid #E75605;
+    padding: 7px 14px;
+}
+
+button:hover {
+    color: #E75605;
+}
+/* paragraph styles */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.burger-menu {
+    position: absolute;
+    visibility: hidden;
+}
+/* general html styles end */
+
+/* 
+////////////////////
+header styles start
+//////////////////// */
+header {
+    background-image: url(./assets/header-burger.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    position: relative;
+}
+/* top navbar styles */
+.nav-header ul {
+    text-align: center;
+    padding-top: 2vh;
+}
+.nav-header li {
+    display: inline;
+}
+.nav-header a {
+    text-decoration: none;
+    color: #1f2022;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.nav-header a:hover,
+.nav-header a:focus {
+    color: #E75605;
+}
+/* top navbar styles end */
+h1 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 8.5rem;
+    width: 50vw;
+    padding-left: 50vw;
+    padding-top: 18vh;
+    line-height: 8rem;
+}
+/* icons nav styles */
+.nav-icons {
+    position: absolute;
+    right: 0;
+    top:35vh;
+}
+.nav-icons li{
+    list-style: none;
+    text-align: center;
+    margin-right: 2.5vw;
+}
+.nav-icons i {
+    color: #E75605;
+    font-size: 1.6rem;
+    padding: 8px 10px;
+}
+.nav-icons i:hover {
+    color: #1f2022
+}
+/* 
+////////////////////
+header styles end
+//////////////////// */
+
+/* 
+////////////////////
+main styles start
+//////////////////// */
+.float-block {
+    width: 50%;
+    margin: 0;
+    float: left;
+    height: 75vh;
+}
+.float-right-1 {
+    float: right;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.text-block {
+    text-align: left;
+    padding: 10%;
+}
+/* float grid styles end */
+/* dessert section */
+.desserts-section {
+    clear: both;
+    padding: 17vh 0;
+    background-color: #eeeeee
+}
+.desserts-section img {
+    width: 25%;
+    height: 25%;
+    margin-right: 5vw;
+    float: left;
+}
+.desserts-section h2 {
+    margin: 0;
+}
+.desserts-text {
+    width: 68%;
+    height: 24%;
+    float: left;
+    text-align: left;
+}
+/* desserts section end */
+/* second menu section start */
+.second-menu {
+    clear: both;
+    background-color: #E75605;
+    padding: 9% 0;
+    text-align: center;
+}
+.second-menu li {
+    display: inline-block;
+    width: 15vw;
+}
+.second-menu ul {
+    padding-left: 0;
+}
+.second-menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.second-menu a:hover,
+.second-menu a:focus {
+    color: #1f2022;
+}
+.second-menu p {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.second-menu i {
+    font-size: 3.3rem;
+}
+/* second menu section end */
+/* the gram gallery */
+.thegram {
+    text-align: center;
+    margin-bottom: 14vh;
+}
+.thegram h2 {
+    margin: 11vh 0px;
+}
+.thegram img {
+    width: 31%;
+}
+.thegram-photo-2 {
+    margin: 0px 3%;
+}
+/* the gram gallery end */
+
+/* 
+////////////////////
+main styles end
+//////////////////// */
+
+/* 
+////////////////////
+footer styles start
+//////////////////// 
+*/
+
+footer {
+    background-color: #eeeeee;
+}
+.nav-footer ul {
+    text-align: center;
+    padding-top: 5vh;
+    margin-bottom:7vh;
+    padding-left: 0;
+}
+.nav-footer li {
+    display: inline;
+}
+.nav-footer a {
+    text-decoration: none;
+    color: #1f2022;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.nav-footer a:hover,
+.nav-footer a:focus {
+    color: #E75605;
+}
+/* footer nav end */
+/* footer sections, contact and form */
+.footersection {
+    width: 40%;
+    /* display: inline-block; */
+    float: left;
+    text-align: left;
+}
+.footersection h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-left: 3vw;
+}
+.footersection p {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 0.8rem;
+}
+/* form section styles */
+.formsection {
+    padding-left: 8vw;
+    width: 47vw;
+}
+.formsection .email {
+    border: none;
+    margin: 0;
+    padding: 14px 25px;
+    width: 75%;
+    float: left;
+}
+.formsection .submit {
+    width: 24%;
+    padding: 10.5px 20px;
+    border: solid #E75605 3.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: white;
+    float:left;
+}
+.formsection .submit:hover {
+    color: #E75605;
+}
+/* footer bottom */
+.copyright {
+    clear: both;
+    background-color: #131314;
+    color: #e4e2e2;
+    height: 10vh;
+    text-align: center;
+    margin-top: 10vh;
+}
+.createdat a {
+    text-decoration: none;
+    color: #e4e2e2;
+    padding-top: 9px;
+}
+.createdat a:hover {
+    color: #E75605;
+}
+.copyright p {
+    padding: 9px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.copyright span {
+    text-transform: lowercase;
+}
+/* footer bottom end */
+/* 
+////////////////////
+footer styles end
+//////////////////// 
+*/
+
+/* 
+////////////////////
+media queries
+//////////////////// 
+*/
+@media (max-width:1450px) {
+    /* small h1 and more padding left to stop h1 overlap with burger background img */
+    h1 {
+        font-size: 8rem;
+        width: 49vw;
+        padding-left: 50vw;
+    }
+    /* decrease height to stop img stretch */
+    .float-block {
+        height: 65vh;
+    }
+    /* more room to stop submit button compresion */
+    .formsection {
+        padding-left: 6vw;
+    }
+}
+@media (max-width:1300px) {
+    /* fix header h1, add more whitespace at top for title */
+    h1 {
+        font-size: 8.5rem;
+        padding-left: 45vw;
+        padding-top: 0;
+        line-height: 7.5rem;
+    }
+    /* puts icons at bottom of header to prevent crowding */
+    .nav-icons {
+        top: 70vh;
+    }
+    /* decrease image size to provide more whitespace transitioning into mobile design */
+    header {
+        background-size: 80vh; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        background-position: bottom left;
+    }
+    /* decrease height to stop img stretch */
+    .float-block {
+        height: 60vh;
+    }
+    /* change h2 from 2.2rem */
+    h2 {
+        font-size: 2rem;
+    }
+    .text-block {
+        padding: 6%;
+    }
+    /* desserts section adjust padding so img and text align */
+    .desserts-section img {
+        width: 30%;
+        height: 30%;
+        margin-right: 3vw;
+    }
+    .desserts-text {
+        width: 66%;
+        height: 30%;
+    }
+    /* decrease p font size from 1.1rem */
+    p {
+        font-size: 1rem;
+    }
+    /* more room to stop submit button compresion */
+    .formsection {
+        padding-left: 2vw;
+    }
+    .formsection .submit {
+        font-size: 0.9rem;
+        padding: 10.5px 15px;
+    }
+}
+@media (max-width:1100px) {
+    /* decrease height to stop img stretch */
+    .float-block {
+        height: 45vh;
+    }
+    /* change h2 from 2rem */
+    h2 {
+        font-size: 1.7rem;
+    }
+    .text-block {
+        padding: 3%;
+    }
+    /* decrease p font size from 1rem */
+    p {
+        font-size: 0.9rem;
+    }
+    /* second menu in main spacing */
+    /* change icon font size from 3.3rem */
+    .second-menu i {
+        font-size: 2.8rem;
+    }
+    /* distance between icons */
+    .second-menu li {
+        display: inline-block;
+        width: 22vw;
+    }
+    /* change width from 31% to stop third photo break */
+    .thegram img {
+        width: 29%;
+    }
+    /* adjusting dessert section img and text layout to line up */
+    .desserts-section img {
+        width: 40%;
+        height: 40%;
+        margin-right: 2vw;
+    }
+    .desserts-text {
+        width: 57%;
+        height: 40%;
+    }
+    .desserts-text p {
+        margin-top: 1%;
+    }
+    /* footerspacing to prevent submit button compression */
+    .footer-contact {
+        width: 33%;
+    }
+    .formsection {
+        width: 67%;
+        padding-left: 0;
+    }
+    /* header background img and h1 size adjust */
+    h1 {
+        font-size: 7.5rem;
+        padding-left: 38vw;
+        padding-top: 0;
+        line-height: 7rem;
+        margin-top:4vh ;
+    }
+    /* puts icons at bottom of header to prevent crowding
+    .nav-icons {
+        top: 70vh;
+    } */
+    /* decrease image size to provide more whitespace transitioning into mobile design */
+    header {
+        background-size: 75vh; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    }
+}
+@media (max-width:900px) {
+    /* 4square gallery section vertical compression to prevent stretch from 45vh */
+    .float-block {
+        height: 40vh;
+    }
+    /* desserts section transition into mobile view, removing floats and stacking items vertically */
+    .desserts-section {
+        padding: 11vh 0;
+    }
+    .desserts-section img {
+        width: 50%;
+        height: 50%;
+        margin: 0 25%;
+    }
+    .desserts-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    /* footer contact and form transition into mobile view, stacking items removing float */
+    .footersection {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footersection h3 {
+        margin-left: 0;
+    }
+    .formsection h3 {
+        margin-top: 3vh;
+    }
+    .nav-footer ul {
+        margin-bottom:4vh;
+        padding-left: 0;
+    }
+    .formsection .email,
+    .formsection .submit {
+        width: 75%;
+        float: none;
+    }
+}
+@media (max-width:800px) {
+    .wrapper {
+        width: 90%;
+    }
+    .float-block {
+        width: 50%;
+    }
+    /* header nav into burger menu */
+    /* .burger-menu appears */
+    .burger-menu {
+        position: absolute;
+        visibility: visible;
+        font-size: 2rem;
+        position: absolute;
+        top: 3vh;
+        right: 3vw;
+    }
+    .burger-menu:hover,
+    .burger-menu:focus {
+        color: #E75605;
+    }
+    /* remove top nav and icon nav */
+    header ul {
+        display: none;
+        position: absolute;
+    }
+    /* fix header h1, add more whitespace at top for title */
+    h1 {
+        font-size: 6rem;
+        padding-left: 33vw;
+        padding-top: 9vh;
+        line-height: 5.5rem;
+        margin: 0;
+    }
+    /* decrease image size to provide more whitespace transitioning into mobile design */
+    header {
+        background-size: 75vh;
+    }
+    /* reduce all h2 margin for more room for other elements */
+    h2 {
+        margin:1vh 0 ;
+        font-size: 1.6rem;
+    }
+    /* fit icons inline */
+    .second-menu li {
+        width: 26vw;
+    }
+}
+@media (max-width:700px) {
+    /* smaller font sizes */
+    .float-block h2 {
+        font-size: 1.4rem;
+    }
+    .float-block button {
+        font-size: 0.9rem;
+    }
+    /* smaller icon and font size */
+    .second-menu p {
+        font-size: 1.4rem;
+    }
+    .second-menu i {
+        font-size: 3rem;
+    }
+    .second-menu ul {
+        padding-left: 0;
+    }
+}
+@media (max-width:600px) {
+    .wrapper {
+        width: 95%;
+    }
+    /* switch from grid layout to stack */
+    .float-block {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: none;
+    }
+    .text-block {
+        padding: 7%;
+    }
+    .text-block p {
+        font-size: 1rem;
+    }
+    .text-block img {
+        height: 50vh;
+        width: 100%;
+    }
+    /* make desserts img larger */
+    .desserts-section img {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .desserts-section {
+        padding:8vh 0;
+    }
+    /* remove third photo from the gram section */
+    .thegram-photo-3 {
+        display: none;
+    }
+    .thegram {
+        margin-bottom: 11vh;
+    }
+    .thegram h2 {
+        margin: 5vh 0px;
+    }
+    .thegram img {
+        width: 42.5%;
+    }
+    .thegram-photo-2 {
+        margin-left:5%;
+    }
+    /* header h1 */
+    h1 {
+        font-size: 5.3rem;
+        padding-left: 28vw;
+        padding-top: 14vh;
+        line-height: 4.5rem;
+        margin: 0;
+    }
+    /* decrease image size to provide more whitespace transitioning into mobile design */
+    header {
+        background-size: 70vh;
+    }
+    /* second icon menu mobile view, stacking icons */
+    .second-menu li {
+        width: 70%;
+        margin: 3vh auto;
+    }
+    .second-menu {
+        padding: 0;
+    }
+    .second-menu ul {
+        padding: 0;
+        margin: 0;
+    } 
+    /* footer menu adjust font sizes and padding */
+    .nav-footer a {
+        font-size: 0.75rem;
+    padding: 8px 12px;
+    }
+    /* stay updated form */
+    .formsection .submit,
+    .formsection .email {
+        width: 90%;
+    }
+    .formsection .email {
+        text-align: center;
+    }
+}
+@media (max-width:500px) {
+    /* header h1 */
+    h1 {
+        font-size: 4.5rem;
+        padding-left: 0;
+        padding-top: 16vh;
+        line-height: 4rem;
+        margin: 0 auto;
+    }
+    /* decrease image size to provide more whitespace transitioning into mobile design */
+    header {
+        background-size: 60vh;
+    }
+}
+@media (max-width:430px) {
+    h1 {
+        width: 88%;
+    }
+}
